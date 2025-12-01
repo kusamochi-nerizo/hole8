@@ -19,10 +19,10 @@ public class Effect9 : EffectStateWatcher
                 if (isIncongruity && intPart > 0)
                 {
                     float decimalPart = 1-(time - intPart);   // 小数部分
-                    timerText.text = $"{intPart+decimalPart:F2}";
+                    timerText.text = $"{intPart+decimalPart:F1}";
                     return;
                 }
-                timerText.text = $"{time:F2}";
+                timerText.text = $"{time:F1}";
             })
             .AddTo(this);
     }
